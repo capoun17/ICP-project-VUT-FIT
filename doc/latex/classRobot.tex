@@ -1,0 +1,415 @@
+\hypertarget{classRobot}{}\doxysection{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+
+
+{\ttfamily \#include $<$robot.\+h$>$}
+
+
+
+Inheritance diagram for Robot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classRobot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classRobot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0}{Rotation\+Direction}} \{ \mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0a7eb79264d6f1f4f2b67ae53d1eb25143}{Clockwise}}
+, \mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0a94fa9d57b68ee697e57dd3fee764786d}{Counter\+Clockwise}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobot_a2681fa6e30d2146b191daf0f902ba185}{selection\+Changed}} (bool selected)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{Robot}} ()
+\item 
+QRectF \mbox{\hyperlink{classRobot_a5f0c26b471f2ac1f83c176cb03ea88b1}{bounding\+Rect}} () const override
+\item 
+QPainter\+Path \mbox{\hyperlink{classRobot_aaae94c949913419de176aa55169699aa}{shape}} () const override
+\item 
+void \mbox{\hyperlink{classRobot_a485256ca6a963011ba1cc6216b06a734}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\begin{DoxyCompactList}\small\item\em \mbox{[}3\mbox{]} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobot_ab17270ff69a154ca897d19958212d164}{mouse\+Press\+Event}} (QGraphics\+Scene\+Mouse\+Event $\ast$event) override
+\item 
+bool \mbox{\hyperlink{classRobot_ad1f8f0540d119345cf07e36d94217a2c}{is\+Selected}} () const
+\item 
+void \mbox{\hyperlink{classRobot_a4a4223d342d1b83885e2c5edbe22490e}{set\+Move\+Type}} (int type)
+\item 
+bool \mbox{\hyperlink{classRobot_afbf7f104e31d317d8ebd038bd0a34031}{wall\+Is\+In\+Vision}} (double x1, double y1, double x2, double y2) const
+\item 
+void \mbox{\hyperlink{classRobot_a20c37b153e8420bfb8ab240755314b72}{robot\+Update}} (int step)
+\item 
+void \mbox{\hyperlink{classRobot_af7d0acbf29b1233a354613b53611fe97}{setX}} (qreal x)
+\item 
+qreal \mbox{\hyperlink{classRobot_a13da984126418220335d307769046f98}{getX}} ()
+\item 
+void \mbox{\hyperlink{classRobot_a58f06ec3f1b1ba925d7f03a25bde1270}{setY}} (qreal y)
+\item 
+qreal \mbox{\hyperlink{classRobot_a44056510766d19c2f50c6b370a0338ee}{getY}} ()
+\item 
+void \mbox{\hyperlink{classRobot_abc9f35a35476f7373fe5be974d847248}{set\+Angle}} (qreal angle)
+\item 
+qreal \mbox{\hyperlink{classRobot_aedadf8cce8ac1ed4eea578463a761cdf}{get\+Angle}} ()
+\item 
+qreal \mbox{\hyperlink{classRobot_a9ebf4dc05b495c4f5487305de1641845}{get\+Speed}} () const
+\item 
+void \mbox{\hyperlink{classRobot_a8c5527ebbe15657a0411c966c6d8e796}{set\+Speed}} (qreal speed)
+\item 
+\mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0}{Rotation\+Direction}} \mbox{\hyperlink{classRobot_afeb5562cb4bcb7f07dfeb4113c6a05b4}{rotation\+Direction}} () const
+\item 
+void \mbox{\hyperlink{classRobot_a96044bd0dbc662304068fff491937329}{set\+Rotation\+Direction}} (\mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0}{Rotation\+Direction}} direction)
+\item 
+qreal \mbox{\hyperlink{classRobot_a01cbf937a09eec61c58722788ca17d93}{collision\+Rotation\+Angle}} () const
+\item 
+void \mbox{\hyperlink{classRobot_a5fa31a68443a5ae1e999325b769a8024}{set\+Collision\+Rotation\+Angle}} (qreal angle)
+\item 
+qreal \mbox{\hyperlink{classRobot_a9f363a5905380e06d11e4b3ad58da91f}{robot\+Vision\+Distance}} () const
+\item 
+void \mbox{\hyperlink{classRobot_a18ff9c6896138531c0f1a1372321d7f2}{set\+Vision\+Distance}} (qreal distance)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classRobot}{Robot}} $\ast$ \mbox{\hyperlink{classRobot_a4c914b17ed44f1265cc435f08b66b75f}{get\+Last\+Selected\+Robot}} ()
+\item 
+static void \mbox{\hyperlink{classRobot_a0f939db6eb25345074808c711a6c8100}{set\+Last\+Selected\+Robot}} (\mbox{\hyperlink{classRobot}{Robot}} $\ast$robotptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::list$<$ \mbox{\hyperlink{classRobot}{Robot}} $\ast$ $>$ \mbox{\hyperlink{classRobot_ae6b51b6bf11c9930689a4fbc306fe75a}{robots}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 18 of file robot.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classRobot_adcd254d627fc04d8de469658ec7fcbd0}\label{classRobot_adcd254d627fc04d8de469658ec7fcbd0}} 
+\index{Robot@{Robot}!RotationDirection@{RotationDirection}}
+\index{RotationDirection@{RotationDirection}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{RotationDirection}{RotationDirection}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0}{Robot\+::\+Rotation\+Direction}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Clockwise@{Clockwise}!Robot@{Robot}}\index{Robot@{Robot}!Clockwise@{Clockwise}}}\mbox{\Hypertarget{classRobot_adcd254d627fc04d8de469658ec7fcbd0a7eb79264d6f1f4f2b67ae53d1eb25143}\label{classRobot_adcd254d627fc04d8de469658ec7fcbd0a7eb79264d6f1f4f2b67ae53d1eb25143}} 
+Clockwise&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CounterClockwise@{CounterClockwise}!Robot@{Robot}}\index{Robot@{Robot}!CounterClockwise@{CounterClockwise}}}\mbox{\Hypertarget{classRobot_adcd254d627fc04d8de469658ec7fcbd0a94fa9d57b68ee697e57dd3fee764786d}\label{classRobot_adcd254d627fc04d8de469658ec7fcbd0a94fa9d57b68ee697e57dd3fee764786d}} 
+Counter\+Clockwise&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 22 of file robot.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}\label{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}} 
+\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{Robot()}{Robot()}}
+{\footnotesize\ttfamily Robot\+::\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file robot.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRobot_a5f0c26b471f2ac1f83c176cb03ea88b1}\label{classRobot_a5f0c26b471f2ac1f83c176cb03ea88b1}} 
+\index{Robot@{Robot}!boundingRect@{boundingRect}}
+\index{boundingRect@{boundingRect}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{boundingRect()}{boundingRect()}}
+{\footnotesize\ttfamily QRectF Robot\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line 25 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a01cbf937a09eec61c58722788ca17d93}\label{classRobot_a01cbf937a09eec61c58722788ca17d93}} 
+\index{Robot@{Robot}!collisionRotationAngle@{collisionRotationAngle}}
+\index{collisionRotationAngle@{collisionRotationAngle}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{collisionRotationAngle()}{collisionRotationAngle()}}
+{\footnotesize\ttfamily qreal Robot\+::collision\+Rotation\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 288 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_aedadf8cce8ac1ed4eea578463a761cdf}\label{classRobot_aedadf8cce8ac1ed4eea578463a761cdf}} 
+\index{Robot@{Robot}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily qreal Robot\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 277 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a4c914b17ed44f1265cc435f08b66b75f}\label{classRobot_a4c914b17ed44f1265cc435f08b66b75f}} 
+\index{Robot@{Robot}!getLastSelectedRobot@{getLastSelectedRobot}}
+\index{getLastSelectedRobot@{getLastSelectedRobot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getLastSelectedRobot()}{getLastSelectedRobot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRobot}{Robot}} $\ast$ Robot\+::get\+Last\+Selected\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 84 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a9ebf4dc05b495c4f5487305de1641845}\label{classRobot_a9ebf4dc05b495c4f5487305de1641845}} 
+\index{Robot@{Robot}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily qreal Robot\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 281 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a13da984126418220335d307769046f98}\label{classRobot_a13da984126418220335d307769046f98}} 
+\index{Robot@{Robot}!getX@{getX}}
+\index{getX@{getX}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily qreal Robot\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 263 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a44056510766d19c2f50c6b370a0338ee}\label{classRobot_a44056510766d19c2f50c6b370a0338ee}} 
+\index{Robot@{Robot}!getY@{getY}}
+\index{getY@{getY}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily qreal Robot\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 270 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_ad1f8f0540d119345cf07e36d94217a2c}\label{classRobot_ad1f8f0540d119345cf07e36d94217a2c}} 
+\index{Robot@{Robot}!isSelected@{isSelected}}
+\index{isSelected@{isSelected}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{isSelected()}{isSelected()}}
+{\footnotesize\ttfamily bool Robot\+::is\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 60 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_ab17270ff69a154ca897d19958212d164}\label{classRobot_ab17270ff69a154ca897d19958212d164}} 
+\index{Robot@{Robot}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Robot\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line 33 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a485256ca6a963011ba1cc6216b06a734}\label{classRobot_a485256ca6a963011ba1cc6216b06a734}} 
+\index{Robot@{Robot}!paint@{paint}}
+\index{paint@{paint}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Robot\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\mbox{[}3\mbox{]} 
+
+
+
+Definition at line 64 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a20c37b153e8420bfb8ab240755314b72}\label{classRobot_a20c37b153e8420bfb8ab240755314b72}} 
+\index{Robot@{Robot}!robotUpdate@{robotUpdate}}
+\index{robotUpdate@{robotUpdate}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{robotUpdate()}{robotUpdate()}}
+{\footnotesize\ttfamily void Robot\+::robot\+Update (\begin{DoxyParamCaption}\item[{int}]{step }\end{DoxyParamCaption})}
+
+
+
+Definition at line 89 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a9f363a5905380e06d11e4b3ad58da91f}\label{classRobot_a9f363a5905380e06d11e4b3ad58da91f}} 
+\index{Robot@{Robot}!robotVisionDistance@{robotVisionDistance}}
+\index{robotVisionDistance@{robotVisionDistance}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{robotVisionDistance()}{robotVisionDistance()}}
+{\footnotesize\ttfamily qreal Robot\+::robot\+Vision\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 291 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_afeb5562cb4bcb7f07dfeb4113c6a05b4}\label{classRobot_afeb5562cb4bcb7f07dfeb4113c6a05b4}} 
+\index{Robot@{Robot}!rotationDirection@{rotationDirection}}
+\index{rotationDirection@{rotationDirection}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{rotationDirection()}{rotationDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0}{Robot\+::\+Rotation\+Direction}} Robot\+::rotation\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 285 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a2681fa6e30d2146b191daf0f902ba185}\label{classRobot_a2681fa6e30d2146b191daf0f902ba185}} 
+\index{Robot@{Robot}!selectionChanged@{selectionChanged}}
+\index{selectionChanged@{selectionChanged}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{selectionChanged}{selectionChanged}}
+{\footnotesize\ttfamily void Robot\+::selection\+Changed (\begin{DoxyParamCaption}\item[{bool}]{selected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{classRobot_abc9f35a35476f7373fe5be974d847248}\label{classRobot_abc9f35a35476f7373fe5be974d847248}} 
+\index{Robot@{Robot}!setAngle@{setAngle}}
+\index{setAngle@{setAngle}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setAngle()}{setAngle()}}
+{\footnotesize\ttfamily void Robot\+::set\+Angle (\begin{DoxyParamCaption}\item[{qreal}]{angle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 274 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a5fa31a68443a5ae1e999325b769a8024}\label{classRobot_a5fa31a68443a5ae1e999325b769a8024}} 
+\index{Robot@{Robot}!setCollisionRotationAngle@{setCollisionRotationAngle}}
+\index{setCollisionRotationAngle@{setCollisionRotationAngle}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setCollisionRotationAngle()}{setCollisionRotationAngle()}}
+{\footnotesize\ttfamily void Robot\+::set\+Collision\+Rotation\+Angle (\begin{DoxyParamCaption}\item[{qreal}]{angle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 289 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a0f939db6eb25345074808c711a6c8100}\label{classRobot_a0f939db6eb25345074808c711a6c8100}} 
+\index{Robot@{Robot}!setLastSelectedRobot@{setLastSelectedRobot}}
+\index{setLastSelectedRobot@{setLastSelectedRobot}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setLastSelectedRobot()}{setLastSelectedRobot()}}
+{\footnotesize\ttfamily void Robot\+::set\+Last\+Selected\+Robot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRobot}{Robot}} $\ast$}]{robotptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 294 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a4a4223d342d1b83885e2c5edbe22490e}\label{classRobot_a4a4223d342d1b83885e2c5edbe22490e}} 
+\index{Robot@{Robot}!setMoveType@{setMoveType}}
+\index{setMoveType@{setMoveType}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setMoveType()}{setMoveType()}}
+{\footnotesize\ttfamily void Robot\+::set\+Move\+Type (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a96044bd0dbc662304068fff491937329}\label{classRobot_a96044bd0dbc662304068fff491937329}} 
+\index{Robot@{Robot}!setRotationDirection@{setRotationDirection}}
+\index{setRotationDirection@{setRotationDirection}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setRotationDirection()}{setRotationDirection()}}
+{\footnotesize\ttfamily void Robot\+::set\+Rotation\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRobot_adcd254d627fc04d8de469658ec7fcbd0}{Rotation\+Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line 286 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a8c5527ebbe15657a0411c966c6d8e796}\label{classRobot_a8c5527ebbe15657a0411c966c6d8e796}} 
+\index{Robot@{Robot}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Robot\+::set\+Speed (\begin{DoxyParamCaption}\item[{qreal}]{speed }\end{DoxyParamCaption})}
+
+
+
+Definition at line 282 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a18ff9c6896138531c0f1a1372321d7f2}\label{classRobot_a18ff9c6896138531c0f1a1372321d7f2}} 
+\index{Robot@{Robot}!setVisionDistance@{setVisionDistance}}
+\index{setVisionDistance@{setVisionDistance}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setVisionDistance()}{setVisionDistance()}}
+{\footnotesize\ttfamily void Robot\+::set\+Vision\+Distance (\begin{DoxyParamCaption}\item[{qreal}]{distance }\end{DoxyParamCaption})}
+
+
+
+Definition at line 292 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_af7d0acbf29b1233a354613b53611fe97}\label{classRobot_af7d0acbf29b1233a354613b53611fe97}} 
+\index{Robot@{Robot}!setX@{setX}}
+\index{setX@{setX}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Robot\+::setX (\begin{DoxyParamCaption}\item[{qreal}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 260 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_a58f06ec3f1b1ba925d7f03a25bde1270}\label{classRobot_a58f06ec3f1b1ba925d7f03a25bde1270}} 
+\index{Robot@{Robot}!setY@{setY}}
+\index{setY@{setY}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Robot\+::setY (\begin{DoxyParamCaption}\item[{qreal}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 267 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_aaae94c949913419de176aa55169699aa}\label{classRobot_aaae94c949913419de176aa55169699aa}} 
+\index{Robot@{Robot}!shape@{shape}}
+\index{shape@{shape}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path Robot\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line 51 of file robot.\+cpp.
+
+\mbox{\Hypertarget{classRobot_afbf7f104e31d317d8ebd038bd0a34031}\label{classRobot_afbf7f104e31d317d8ebd038bd0a34031}} 
+\index{Robot@{Robot}!wallIsInVision@{wallIsInVision}}
+\index{wallIsInVision@{wallIsInVision}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{wallIsInVision()}{wallIsInVision()}}
+{\footnotesize\ttfamily bool Robot\+::wall\+Is\+In\+Vision (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{x2,  }\item[{double}]{y2 }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 183 of file robot.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRobot_ae6b51b6bf11c9930689a4fbc306fe75a}\label{classRobot_ae6b51b6bf11c9930689a4fbc306fe75a}} 
+\index{Robot@{Robot}!robots@{robots}}
+\index{robots@{robots}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{robots}{robots}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{classRobot}{Robot}} $\ast$ $>$ Robot\+::robots\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 43 of file robot.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{robot_8h}{robot.\+h}}\item 
+src/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\item 
+src/\mbox{\hyperlink{robot_8cpp}{robot.\+cpp}}\end{DoxyCompactItemize}

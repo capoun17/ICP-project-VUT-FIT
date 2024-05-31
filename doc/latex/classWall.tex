@@ -1,0 +1,235 @@
+\hypertarget{classWall}{}\doxysection{Wall Class Reference}
+\label{classWall}\index{Wall@{Wall}}
+
+
+{\ttfamily \#include $<$wall.\+h$>$}
+
+
+
+Inheritance diagram for Wall\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classWall__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wall\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classWall__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWall_a12dc41bc7bc045c55ec1034a43e52043}{Wall}} ()
+\item 
+QRectF \mbox{\hyperlink{classWall_a35b01eb4a183d892e3d5d63c735b6ccf}{bounding\+Rect}} () const override
+\item 
+void \mbox{\hyperlink{classWall_a5b85bd1704a73cf320767c8a94735436}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ \mbox{\hyperlink{classWall_ac29428efbf047997c0d758800839b112}{get\+Rectangle\+Vertices}} ()
+\item 
+void \mbox{\hyperlink{classWall_ab2c83d07311b4394e2eac3bfd716e391}{setX}} (qreal x)
+\item 
+qreal \mbox{\hyperlink{classWall_afe6708682ffe75b7d7ecf20926722b61}{getX}} ()
+\item 
+void \mbox{\hyperlink{classWall_a352fca563db5ea062f4072980f7250da}{setY}} (qreal y)
+\item 
+qreal \mbox{\hyperlink{classWall_a8e60ce315dd55c2087073af9aa731b08}{getY}} ()
+\item 
+void \mbox{\hyperlink{classWall_a7fd62f688e6c7c1329a1ae8ec4171dab}{set\+Angle}} (qreal angle)
+\item 
+qreal \mbox{\hyperlink{classWall_a04928b0f9fc31387dfd2cd0dde1c79ad}{get\+Angle}} ()
+\item 
+void \mbox{\hyperlink{classWall_ae109d8d01e10847bcabd187a8e4d2edd}{set\+Width}} (qreal width)
+\item 
+qreal \mbox{\hyperlink{classWall_a661daf1c739686ca5600da7e989a98d3}{get\+Width}} ()
+\item 
+void \mbox{\hyperlink{classWall_a0aa1f0c225a35fd51f0ea2c6c4699610}{set\+Length}} (qreal length)
+\item 
+qreal \mbox{\hyperlink{classWall_ad4c4f0a00a73211ad11d58d67ec0b5b9}{get\+Length}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::list$<$ \mbox{\hyperlink{classWall}{Wall}} $\ast$ $>$ \mbox{\hyperlink{classWall_a26b4b0f33dccd56a590644928800de15}{walls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 15 of file wall.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWall_a12dc41bc7bc045c55ec1034a43e52043}\label{classWall_a12dc41bc7bc045c55ec1034a43e52043}} 
+\index{Wall@{Wall}!Wall@{Wall}}
+\index{Wall@{Wall}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{Wall()}{Wall()}}
+{\footnotesize\ttfamily Wall\+::\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file wall.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWall_a35b01eb4a183d892e3d5d63c735b6ccf}\label{classWall_a35b01eb4a183d892e3d5d63c735b6ccf}} 
+\index{Wall@{Wall}!boundingRect@{boundingRect}}
+\index{boundingRect@{boundingRect}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{boundingRect()}{boundingRect()}}
+{\footnotesize\ttfamily QRectF Wall\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line 40 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_a04928b0f9fc31387dfd2cd0dde1c79ad}\label{classWall_a04928b0f9fc31387dfd2cd0dde1c79ad}} 
+\index{Wall@{Wall}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily qreal Wall\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_ad4c4f0a00a73211ad11d58d67ec0b5b9}\label{classWall_ad4c4f0a00a73211ad11d58d67ec0b5b9}} 
+\index{Wall@{Wall}!getLength@{getLength}}
+\index{getLength@{getLength}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily qreal Wall\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 88 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_ac29428efbf047997c0d758800839b112}\label{classWall_ac29428efbf047997c0d758800839b112}} 
+\index{Wall@{Wall}!getRectangleVertices@{getRectangleVertices}}
+\index{getRectangleVertices@{getRectangleVertices}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{getRectangleVertices()}{getRectangleVertices()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ Wall\+::get\+Rectangle\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_a661daf1c739686ca5600da7e989a98d3}\label{classWall_a661daf1c739686ca5600da7e989a98d3}} 
+\index{Wall@{Wall}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily qreal Wall\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 81 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_afe6708682ffe75b7d7ecf20926722b61}\label{classWall_afe6708682ffe75b7d7ecf20926722b61}} 
+\index{Wall@{Wall}!getX@{getX}}
+\index{getX@{getX}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily qreal Wall\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_a8e60ce315dd55c2087073af9aa731b08}\label{classWall_a8e60ce315dd55c2087073af9aa731b08}} 
+\index{Wall@{Wall}!getY@{getY}}
+\index{getY@{getY}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily qreal Wall\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_a5b85bd1704a73cf320767c8a94735436}\label{classWall_a5b85bd1704a73cf320767c8a94735436}} 
+\index{Wall@{Wall}!paint@{paint}}
+\index{paint@{paint}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Wall\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line 47 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_a7fd62f688e6c7c1329a1ae8ec4171dab}\label{classWall_a7fd62f688e6c7c1329a1ae8ec4171dab}} 
+\index{Wall@{Wall}!setAngle@{setAngle}}
+\index{setAngle@{setAngle}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{setAngle()}{setAngle()}}
+{\footnotesize\ttfamily void Wall\+::set\+Angle (\begin{DoxyParamCaption}\item[{qreal}]{angle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_a0aa1f0c225a35fd51f0ea2c6c4699610}\label{classWall_a0aa1f0c225a35fd51f0ea2c6c4699610}} 
+\index{Wall@{Wall}!setLength@{setLength}}
+\index{setLength@{setLength}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{setLength()}{setLength()}}
+{\footnotesize\ttfamily void Wall\+::set\+Length (\begin{DoxyParamCaption}\item[{qreal}]{length }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_ae109d8d01e10847bcabd187a8e4d2edd}\label{classWall_ae109d8d01e10847bcabd187a8e4d2edd}} 
+\index{Wall@{Wall}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Wall\+::set\+Width (\begin{DoxyParamCaption}\item[{qreal}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_ab2c83d07311b4394e2eac3bfd716e391}\label{classWall_ab2c83d07311b4394e2eac3bfd716e391}} 
+\index{Wall@{Wall}!setX@{setX}}
+\index{setX@{setX}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Wall\+::setX (\begin{DoxyParamCaption}\item[{qreal}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file wall.\+cpp.
+
+\mbox{\Hypertarget{classWall_a352fca563db5ea062f4072980f7250da}\label{classWall_a352fca563db5ea062f4072980f7250da}} 
+\index{Wall@{Wall}!setY@{setY}}
+\index{setY@{setY}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Wall\+::setY (\begin{DoxyParamCaption}\item[{qreal}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file wall.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWall_a26b4b0f33dccd56a590644928800de15}\label{classWall_a26b4b0f33dccd56a590644928800de15}} 
+\index{Wall@{Wall}!walls@{walls}}
+\index{walls@{walls}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{walls}{walls}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{classWall}{Wall}} $\ast$ $>$ Wall\+::walls\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 25 of file wall.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{wall_8h}{wall.\+h}}\item 
+src/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\item 
+src/\mbox{\hyperlink{wall_8cpp}{wall.\+cpp}}\end{DoxyCompactItemize}

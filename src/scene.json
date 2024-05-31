@@ -1,0 +1,44 @@
+[
+    {
+        "length": 20,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 1000,
+        "x": 0,
+        "y": 510
+    },
+    {
+        "length": 1000,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 20,
+        "x": 510,
+        "y": 0
+    },
+    {
+        "length": 20,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 1001,
+        "x": 0,
+        "y": -510
+    },
+    {
+        "length": 1000,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 20,
+        "x": -510,
+        "y": 0
+    },
+    {
+        "angle": 300,
+        "collisionAngle": 60,
+        "direction": "Clockwise",
+        "speed": 5,
+        "type": "Robot",
+        "visionDistance": 120,
+        "x": -242.50000000000006,
+        "y": -4.3301270189221786
+    }
+]

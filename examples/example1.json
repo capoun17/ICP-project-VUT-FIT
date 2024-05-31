@@ -1,0 +1,84 @@
+[
+    {
+        "length": 20,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 1001,
+        "x": 0,
+        "y": -510
+    },
+    {
+        "length": 1000,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 20,
+        "x": -510,
+        "y": 0
+    },
+    {
+        "length": 1000,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 20,
+        "x": 510,
+        "y": 0
+    },
+    {
+        "length": 20,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 1000,
+        "x": 0,
+        "y": 510
+    },
+    {
+        "angle": 120,
+        "collisionAngle": 40,
+        "direction": "Clockwise",
+        "speed": 5,
+        "type": "Robot",
+        "visionDistance": 120,
+        "x": 442.01109163268643,
+        "y": -15.650132292061706
+    },
+    {
+        "angle": 130,
+        "collisionAngle": 90,
+        "direction": "Clockwise",
+        "speed": 5,
+        "type": "Robot",
+        "visionDistance": 120,
+        "x": 379.9471891988958,
+        "y": -281.6738067692109
+    },
+    {
+        "angle": 190,
+        "collisionAngle": 60,
+        "direction": "Counterclockwise",
+        "speed": 4,
+        "type": "Robot",
+        "visionDistance": 150,
+        "x": 85.85806436844437,
+        "y": -387.64184400003353
+    },
+    {
+        "angle": 90,
+        "collisionAngle": 10,
+        "direction": "Clockwise",
+        "speed": 1,
+        "type": "Robot",
+        "visionDistance": 120,
+        "x": 459.5704775509452,
+        "y": 285.6839661439022
+    },
+    {
+        "angle": 168,
+        "collisionAngle": 7,
+        "direction": "Clockwise",
+        "speed": 4,
+        "type": "Robot",
+        "visionDistance": 120,
+        "x": 285.0861768469293,
+        "y": 446.3896024092859
+    }
+]

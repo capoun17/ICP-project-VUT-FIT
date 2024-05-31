@@ -1,0 +1,104 @@
+[
+    {
+        "length": 20,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 1000,
+        "x": 0,
+        "y": 510
+    },
+    {
+        "length": 1000,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 20,
+        "x": 510,
+        "y": 0
+    },
+    {
+        "length": 20,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 1001,
+        "x": 0,
+        "y": -510
+    },
+    {
+        "length": 1000,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 20,
+        "x": -510,
+        "y": 0
+    },
+    {
+        "length": 200,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 200,
+        "x": -400,
+        "y": -400
+    },
+    {
+        "length": 100,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 100,
+        "x": 200,
+        "y": 200
+    },
+    {
+        "length": 200,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 200,
+        "x": 0,
+        "y": 0
+    },
+    {
+        "angle": 60,
+        "collisionAngle": 10,
+        "direction": "Clockwise",
+        "speed": 10,
+        "type": "Robot",
+        "visionDistance": 120,
+        "x": -312.1100606653917,
+        "y": -64.81135722850516
+    },
+    {
+        "length": 100,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 100,
+        "x": 400,
+        "y": 400
+    },
+    {
+        "length": 200,
+        "rotation": 0,
+        "type": "Wall",
+        "width": 200,
+        "x": -200,
+        "y": -200
+    },
+    {
+        "angle": 0,
+        "collisionAngle": 60,
+        "direction": "Counterclockwise",
+        "speed": 5,
+        "type": "Robot",
+        "visionDistance": 120,
+        "x": 380,
+        "y": -389.71143170299774
+    },
+    {
+        "angle": 106,
+        "collisionAngle": 33,
+        "direction": "Counterclockwise",
+        "speed": 3,
+        "type": "Robot",
+        "visionDistance": 200,
+        "x": -341.3997561832856,
+        "y": 33.618398992092324
+    }
+]
